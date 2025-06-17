@@ -1,27 +1,27 @@
 % Neovim-Vim, line-number
 
 # turn relative line numbers on
-:set relativenumber
+:set relativenumber \
 :set rnu
 
 # turn relative line numbers off
-:set norelativenumber
+:set norelativenumber \
 :set nornu
 
 # toggle relative line numbers
-:set relativenumber!
+:set relativenumber! \
 :set rnu!
 
 # turn hybrid line numbers on
-:set number relativenumber
+:set number relativenumber \
 :set nu rnu
 
 # turn hybrid line numbers off
-:set nonumber norelativenumber
+:set nonumber norelativenumber \
 :set nonu nornu
 
 # toggle hybrid line numbers
-:set number! relativenumber!
+:set number! relativenumber! \
 :set nu! rnu!
 
 
@@ -34,14 +34,14 @@ C-g
 ~
 
 # change case of the current word
-g~w
+g~w \
 viw ~ - select the word with viw, then change case with ~
 
 # highlight all occurrences
 *
 
 # insert/generate sequence number, increasing number
-1. Select multiple place to insert sequence numbers, using C-v or C-n
+1. Select multiple place to insert sequence numbers, using C-v or C-n \
 2. g C-a
 
 % Neovim-Vim, copy-paste
