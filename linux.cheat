@@ -6,4 +6,6 @@ $ApplicationName: appname
 
 % gifski, linux-media 
 # convert .mp4 file to high quality .gif file
-gifski --fps 5 --width 1920  -o anim.gif test.mp4
+gifski --fps 5 --width 1920  -o <output> <input>
+$input: test.mp4
+%output: anim.gif
