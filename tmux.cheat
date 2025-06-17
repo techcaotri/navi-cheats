@@ -1,0 +1,44 @@
+% tmux, my-general
+
+# <prefix> : means you have to either hit Ctrl + a or Ctrl + b
+C-a or C-b
+# <prefix> C-c :  means you have to hit Ctrl + a or Ctrl + b followed by Ctrl + c
+C-a C-c or C-b C-c 
+
+# reloads the configuration
+<prefix> r
+
+# opens the .local customization file copy with the editor
+<prefix> e
+
+# clears both the screen and the tmux history
+C-l
+# enters copy-mode
+<prefix> Enter              
+# begins selection / visual mode
+copy-mode: v
+# toggles between blockwise visual mode and visual mode
+copy-mode: C-v
+# jumps to the start of line
+copy-mode: H
+# jumps to the end of line
+copy-mode: L
+# copies the selection to the top paste-buffer
+copy-mode: y
+# cancels the current operation
+copy-mode: Escape
+
+# lists the paste-buffers
+<prefix> b
+
+# pastes from the top paste-buffer
+<prefix> p
+
+# lets you choose the paste-buffer to paste from
+<prefix> P
+
+# toggles mouse mode on or off
+<prefix> m
+
+# maximizes the current pane to a new window
+<prefix> +
