@@ -1,6 +1,7 @@
 % find, linux
 # find/search for .desktop file by application's name
-find /usr/share/applications ~/.local/share/applications -name "*.desktop" -exec grep -H "Name=" {} + | grep -i "ApplicationName"
+find /usr/share/applications ~/.local/share/applications -name "*.desktop" -exec grep -H "Name=" {} + | grep -i "<ApplicationName>"
+$ApplicationName: appname
 
 
 % gifski, linux-media 
