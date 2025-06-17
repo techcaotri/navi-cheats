@@ -1,0 +1,8 @@
+% find, linux
+# find/search for .desktop file by application's name
+find /usr/share/applications ~/.local/share/applications -name "*.desktop" -exec grep -H "Name=" {} + | grep -i "ApplicationName"
+
+
+% gifski, linux-media 
+# convert .mp4 file to high quality .gif file
+gifski --fps 5 --width 1920  -o anim.gif test.mp4
