@@ -2,7 +2,6 @@
 
 # scp to homepcex
 termscp -D <target_in_ssh_config>
-$target_in_ssh_config: homepcex
 
 # switch tab
 Tab key
