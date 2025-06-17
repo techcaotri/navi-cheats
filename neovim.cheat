@@ -23,3 +23,80 @@
 # toggle hybrid line numbers
 :set number! relativenumber!
 :set nu! rnu!
+
+
+% Neovim-Vim, my-general
+
+# show current file name and position in the status line
+C-g
+
+# change case of current character
+~
+
+# change case of the current word
+g~w
+viw ~ - select the word with viw, then change case with ~
+
+# highlight all occurrences
+*
+
+# insert/generate sequence number, increasing number
+1. Select multiple place to insert sequence numbers, using C-v or C-n
+2. g C-a
+
+% Neovim-Vim, copy-paste
+
+# copy all file content to the clipboard
+:%y+
+
+# copy current line to the clipboard
+yy
+
+
+% Neovim-Vim, motion
+
+# move cursor horizontally half-screen to the right
+gL
+
+# move cursor horizontally half-screen to the left
+gH
+
+
+% Neovim-Vim, visual-selection
+
+# select inside word
+viw
+
+# change/Delete/etc. inside word
+c|d-iw
+
+# select around word
+vaw
+
+# select inside block
+vi ( [ { b B
+
+# select around block
+va ( [ { b B
+
+# select function code, with function name
+va{
+Shift-v	- Shift-v to select the whole line
+
+# surround text with double quotes
+ysiw then extend the visual selection if needed.
+”
+
+# copy output of BASH command to clipboard
+:!command | xclip -selection clipboard
+
+# copy output of lua execution to clipboard - simple statement
+:let @+ = execute('messages')
+# copy output of lua execution to clipboard - complex statement
+:redir @+
+:lua print(require(’venv-selector.config’).settings.cached_dir)
+:redir END
+
+# copy output of lua execution to current buffer
+:put =execute('messages')
+
