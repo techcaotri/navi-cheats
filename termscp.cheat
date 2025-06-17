@@ -1,0 +1,10 @@
+% termscp, scp TUI
+
+# scp to homepcex
+termscp -D homepcex 
+
+# switch tab
+Tab key
+
+# go to directory
+g key
