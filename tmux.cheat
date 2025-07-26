@@ -42,3 +42,12 @@ copy-mode: Escape
 
 # maximizes the current pane to a new window
 <prefix> +
+
+# move to left window
+<prefix> C-Left
+
+# move to right window
+<prefix> C-Right
+
+# sends command to every tmux panes and windows
+tmux_send_command_to_every_pane <full-command-without-quotes>

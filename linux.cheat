@@ -6,3 +6,15 @@ find /usr/share/applications ~/.local/share/applications -name "*.desktop" -exec
 % gifski, linux-media 
 # convert .mp4 file to high quality .gif file
 gifski --fps 5 --width 1920  -o <output> <input>
+
+% dive, Docker TUI 
+# Docker image analysis tool
+dive <your-image-tag/id/digest>
+
+% systemd-manager-tui, Systemd Service Manager TUI 
+# manage systemd services in TUI
+systemd-manager-tui
+
+% navi, CLI cheatsheet
+# Navi updates the cheatsheet database from selected repo
+navi repo add git@github.com:techcaotri/navi-cheats.git
