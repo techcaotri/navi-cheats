@@ -18,3 +18,7 @@ systemd-manager-tui
 % navi, CLI cheatsheet
 # Navi updates the cheatsheet database from selected repo
 navi repo add git@github.com:techcaotri/navi-cheats.git
+
+% mcat, Mardown CLI Viewer
+# View markdown files in terminal
+mcat <file.md>
